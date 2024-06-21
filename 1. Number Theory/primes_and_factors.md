@@ -56,3 +56,8 @@ There are infinite number of pairs of the form (p, p+2) where p and p+2 are both
 There is always a prime number between $n^2$ and $(n+1)^2$
 
 ---
+
+## Euler's totient function
+
+Two numbers a and b are coprime if gcd(a, b) = 1. Euler's totient function $\phi(n)$ gives the number of coprimes of n between 1 and n.
+$$\phi(n)=\prod p_i^{a_i-1}(p_i-1)
