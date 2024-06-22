@@ -42,7 +42,7 @@ There are infinite number of prime numbers.
 ## Density of Primes
 
 Let $\pi(n)$ denote the number of primes between 1 to n, then
-$$\pi(n)=\frac{n}{ln(n)}$$
+$$\pi(n)\approx\frac{n}{ln(n)}$$
 
 ## Conjectures related to number of primes
 
@@ -60,4 +60,7 @@ There is always a prime number between $n^2$ and $(n+1)^2$
 ## Euler's totient function
 
 Two numbers a and b are coprime if gcd(a, b) = 1. Euler's totient function $\phi(n)$ gives the number of coprimes of n between 1 and n.
-$$\phi(n)=\prod p_i^{a_i-1}(p_i-1)
+$$\phi(n)=\prod p_i^{a_i-1}(p_i-1)$$
+
+If some number n is prime, then it is coprime with every number before it, hence:
+$$\phi(n)=n-1$$
