@@ -64,3 +64,5 @@ $$\phi(n)=\prod p_i^{a_i-1}(p_i-1)$$
 
 If some number n is prime, then it is coprime with every number before it, hence:
 $$\phi(n)=n-1$$
+
+---

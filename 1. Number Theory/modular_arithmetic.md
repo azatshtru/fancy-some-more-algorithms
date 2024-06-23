@@ -35,3 +35,26 @@ Comparing this with the first statement:
 $$x^{-1}=x^{\phi(m)-1}$$
 If m is prime, then:
 $$x^{-1}=x^{m-2}$$
+
+---
+
+# Chinese Remainder Theorem
+
+A set of equations of the form:
+$$x=a_1\mod m_1$$
+$$x=a_2\mod m_2$$
+$$\dots$$
+$$x=a_n\mod m_n$$
+where $m_1,m_2\dots m_n$ are coprime can be solved using the Chinese Remainder theorem.
+
+Let $X_k=\frac{m_1m_2\dots m_n}{m_k}$
+And its inverse with respect to some $m_k$ is $X^{-1}_k_m_k$
+
+Using the notation above,
+$$x = a_1X_1X^{-1}_1_m_1 + a_2X_2X^{-1}_2_m_2 + \dots + a_nX_nX^{-1}_n_m_n  \space  (1)$$
+
+**PROOF** We know that $X_kX^{-1}_k_m_k\mod m_k = 1$,
+$a_kX_kX^{-1}_k_m_k\mod m_k = a_k$
+If we calculate the modulo of x w.r.t. some $m_k$ in statement $(1)$ above, all other terms but the kth one will become zero since they contain $m_k$ and the kth term will become $a_k$.
+
+If we have a solution $x$, all other solutions can be found as $x+m_1+m_2+\dots+m_n$
